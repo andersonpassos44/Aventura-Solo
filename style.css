@@ -17,7 +17,8 @@ h1 {
         }
 
         p {
-            margin-bottom: 5px; /* Espaçamento abaixo de cada parágrafo */
+            max-width: 800px;
+			margin-bottom: 5px; /* Espaçamento abaixo de cada parágrafo */
 			color: #666;
 			font-family: 'Helvetica Neue', Arial, sans-serif; /* Fonte preferida para o corpo do documento */
 			font-size: 1.4rem; /* Tamanho da fonte para o corpo do documento */
@@ -25,6 +26,10 @@ h1 {
 			text-align: justify; /* Alinhamento justificado para o texto */
 			margin: 25px;
         }
+		.protagonist {
+    font-style: italic;
+    text-align: center;
+}
 
 /* Estilo para o título */
 #title {
