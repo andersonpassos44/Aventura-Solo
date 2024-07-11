@@ -1,5 +1,24 @@
+head, html
+
+header {
+    background-color: #393; /* Cor de fundo verde escuro */
+    padding: 10px 0;
+}
+
+h1 {
+            color: #666; /* Cor do título */
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			box-sizing: border-box;
+        }
+
+
 /* Resetando o estilo padrão do navegador */
-body, html {
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -12,10 +31,6 @@ body, html {
 	overflow-y: scroll;
     background-color: #000; /* Fundo preto para destacar o vídeo */
 }
-h1 {
-            color: #666; /* Cor do título */
-			margin: 0 auto
-        }
 
         p {
             max-width: 800px;
@@ -34,16 +49,7 @@ h1 {
 }
 
 /* Estilização adicional para garantir que o conteúdo não ultrapasse a tela */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    box-sizing: border-box; /* Para garantir que o padding seja incluído no tamanho total */
-}
+
 
 /* Estilo para o título */
 #title {
@@ -87,4 +93,71 @@ video {
 /* Escondendo o menu inicialmente */
 .hidden {
     display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+	overflow: hidden;
+    box-sizing: border-box; /* Para garantir que o padding seja incluído no tamanho total */
+}
+
+.logo img {
+    max-width: 100px; /* Ajuste conforme o tamanho da sua imagem de logo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+nav ul li a:hover {
+    background-color: #900; /* Cor de fundo vermelho escuro ao passar o mouse */
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Mostra o submenu ao passar o mouse */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #393; /* Cor de fundo do submenu */
+    padding: 10px;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #222; /* Cor de fundo do rodapé */
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #888; /* Cor do texto do rodapé */
+    text-decoration: none;
+    font-style: italic;
 }
