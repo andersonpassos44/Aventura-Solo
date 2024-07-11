@@ -30,6 +30,19 @@ h1 {
 		.protagonist {
     font-style: italic;
     text-align: center;
+    margin-bottom: 20px; /* Espaço extra abaixo do parágrafo do protagonista */
+}
+
+/* Estilização adicional para garantir que o conteúdo não ultrapasse a tela */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-sizing: border-box; /* Para garantir que o padding seja incluído no tamanho total */
 }
 
 /* Estilo para o título */
