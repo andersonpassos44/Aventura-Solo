@@ -23,7 +23,7 @@
 
 /* Estilo para o menu */
 #menu {
-    display: flex;
+    display: absolute;
     justify-content: center;
     align-items: center;
     color: white;
@@ -54,14 +54,20 @@ body {
     background-position: center;
 	background-color: #fff;
 	font-weight: bold;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
-.protagonist {
-    background-color: #000;
-    color: #fff; /* Cor do texto (opcional) */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 5px; /* Borda arredondada (opcional) */
-}
+.quadro {
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            text-align: justify;
+			justify-content: center;
+        }
 
 /* Estilo para o vídeo */
 video {
