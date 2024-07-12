@@ -61,12 +61,14 @@ body {
 }
 
 .quadro {
-            max-width: 800px;
+            margin: auto;
+			max-width: 800px;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
             text-align: justify;
 			justify-content: center;
+			
         }
 
 /* Estilo para o vídeo */
