@@ -1,163 +1,155 @@
-head, html
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
-header {
-    background-color: #393; /* Cor de fundo verde escuro */
-    padding: 10px 0;
-}
-
-h1 {
-            color: #666; /* Cor do título */
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
-			border: 1px solid #ccc;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			overflow: hidden;
-			box-sizing: border-box;
-        }
-
-
-/* Resetando o estilo padrão do navegador */
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+/* Container para centralizar o conteúdo */
+.container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end; /* Alinha o menu à direita */
     align-items: center;
-	overflow-y: scroll;
-    background-color: #000; /* Fundo preto para destacar o vídeo */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
-
-        p {
-            max-width: 800px;
-			margin-bottom: 5px; /* Espaçamento abaixo de cada parágrafo */
-			color: #666;
-			font-family: 'Helvetica Neue', Arial, sans-serif; /* Fonte preferida para o corpo do documento */
-			font-size: 1.4rem; /* Tamanho da fonte para o corpo do documento */
-			line-height: 1.6; /* Espaçamento entre linhas */
-			text-align: justify; /* Alinhamento justificado para o texto */
-			margin: 25px;
-        }
-		.protagonist {
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 20px; /* Espaço extra abaixo do parágrafo do protagonista */
-}
-
-/* Estilização adicional para garantir que o conteúdo não ultrapasse a tela */
-
 
 /* Estilo para o título */
 #title {
-    position: absolute;
-    top: 10px;
-    width: 100%;
     text-align: center;
-    color: white; /* Cor branca para o texto do título */
-    font-size: 2rem; /* Tamanho da fonte do título */
-    z-index: 1; /* Garantir que o título esteja acima do vídeo */
-}
-
-/* Estilo para o vídeo */
-video {
-    width: 90%;
-    height: auto;
-    max-height: 90%; /* Limita a altura máxima do vídeo para 90% da altura da tela */
-    background-color: black; /* Fundo preto para o vídeo */
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
+	font-weight: bold;
 }
 
 /* Estilo para o menu */
 #menu {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
-    font-size: 2rem;
-    visibility: hidden; /* Inicialmente oculta o menu */
+    font-size: 1.5rem;
+    visibility: hidden;
+	font-weight: bold;
 }
 
 /* Estilo para o link do menu */
 #menu-option {
     color: white;
     text-decoration: none;
-}
-
-/* Escondendo o menu inicialmente */
-.hidden {
-    display: none;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-	overflow: hidden;
-    box-sizing: border-box; /* Para garantir que o padding seja incluído no tamanho total */
-}
-
-.logo img {
-    max-width: 100px; /* Ajuste conforme o tamanho da sua imagem de logo */
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff; /* Cor do texto */
-    text-decoration: none;
     padding: 10px;
-    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+    transition: background-color 0.3s ease;
+	font-weight: bold;
 }
 
-nav ul li a:hover {
-    background-color: #900; /* Cor de fundo vermelho escuro ao passar o mouse */
+/* Fundo para o corpo */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    background-image: url('media/background_rpg.jpeg'); /* Adicione o caminho para o seu background */
+    background-size: cover;
+    background-position: center;
+	background-color: #fff;
+	font-weight: bold;
 }
 
-nav ul li:hover .submenu {
-    display: block; /* Mostra o submenu ao passar o mouse */
+.protagonist {
+    background-color: #000;
+    color: #fff; /* Cor do texto (opcional) */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada (opcional) */
 }
 
+/* Estilo para o vídeo */
+video {
+    width: 90%;
+    height: auto;
+    max-height: 90%;
+    background-color: black;
+    margin-top: 20px;
+}
+
+/* Estilo para o áudio */
+audio {
+    margin-top: 20px;
+}
+
+/* Estilo para o submenu */
 .submenu {
     display: none;
-    position: absolute;
-    background-color: #393; /* Cor de fundo do submenu */
+    position: relative bottom;
+    background-color: #393;
     padding: 10px;
+    list-style: none;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 1000; /* Garante que o submenu apareça sobre outros elementos */
 }
 
-.submenu li {
-    margin: 5px 0;
+/* Mostrar o submenu ao passar o mouse */
+nav ul li:hover .submenu {
+    display: block;
 }
 
-footer {
-    background-color: #222; /* Cor de fundo do rodapé */
-    padding: 10px 0;
-    text-align: center;
+/* Mostrar o submenu ao clicar */
+.show {
+    display: block;
 }
 
-footer nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+/* Estilo para o menu principal */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    border-bottom: 2px solid #fff;
+    font-size: 1.2rem;
+	font-weight: bold;
 }
 
-footer nav ul li a {
-    color: #888; /* Cor do texto do rodapé */
+.menu li {
+    margin: 0 15px;
+    position: relative;
+	font-weight: bold;
+}
+
+.menu a {
+    color: white;
     text-decoration: none;
-    font-style: italic;
+    font-size: 1rem;
+    padding: 10px 20px; /* Aumenta a área de clique */
 }
+
+.menu .dropdown {
+    position: relative;
+}
+
+#menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo para o menu de rodapé */
+.footer-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-menu li {
+    margin: 0 15px;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+

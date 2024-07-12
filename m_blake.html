@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><h1>Passo's Quest</h1></title>
+    <title>RPG Solo</title>
     <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 <body>
-    <div id="title">Passo's Quest</div>
+   <header>
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">RPG Solo</a>
+                        <ul class="submenu">
+                            <li><a href="m_blake.html">A Mansão dos Blake's</a></li>
+                            <li><a href="#">História 2</a></li>
+                            <li><a href="#">História 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Material para RPG</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="title">RPG Solo</div>
     <video id="vd" width="640" height="480" autoplay muted>
         <source src="media/bm.mp4" type="video/mp4">
         Seu navegador pode não suportar a reprodução deste elemento.
     </video>
-	
-	<audio controls autoplay loop>
-    <source src="media/Echoes_of_Time_v2.mp3" type="audio/mp3">
-    Seu navegador não suporta o elemento de áudio.
-</audio>
+    <audio id="bg-music" autoplay>
+        <source src="media/Echoes_of_Time_v2.mp3" type="audio/mp3">
+        Seu navegador pode não suportar a reprodução deste elemento.
+    </audio>
     <div id="menu" class="hidden">
         <a href="epilogo.html" id="menu-option">A Mansão dos Blake's</a>
     </div>

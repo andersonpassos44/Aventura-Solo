@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anderson Passo - RPG Solo Adventures</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Passo's Quest</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
 </head>
-
 <body>
-    <header>
+   <header>
         <div class="container">
-            <div class="logo">
-                <img src="caminho-para-sua-imagem-de-background.jpg" alt="Logo">
-            </div>
             <nav>
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">RPG Solo</a>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">RPG Solo</a>
                         <ul class="submenu">
-                            <li><a href="m_blake.html">A Mansão dos Blakes</a></li>
+                            <li><a href="m_blake.html">A Mansão dos Blake's</a></li>
                             <li><a href="#">História 2</a></li>
                             <li><a href="#">História 3</a></li>
                         </ul>
@@ -31,27 +27,18 @@
             </nav>
         </div>
     </header>
-
-    <section class="main-content">
-        <!-- Conteúdo principal do site -->
-    </section>
-
-    <footer>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">RPG Solo</a></li>
-                    <li><a href="#">Material</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-
-    <!-- Script para animação do submenu -->
-    <script src="script.js"></script>
+    <div id="title">Passo's Quest</div>
+    <video id="vd" autoplay loop>
+        <source src="media/Echoes_of_Time_v2.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </video>
+    <audio autoplay loop>
+        <source src="media/Echoes_of_Time_v2.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <div id="menu" class="hidden">
+        <a href="m_blake.html" id="menu-option">A Mansão dos Blake's</a>
+    </div>
+    <script src="script.js"></script> <!-- Link para o arquivo JS externo -->
 </body>
-
 </html>
