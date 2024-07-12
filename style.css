@@ -60,6 +60,12 @@ body {
 	min-height: 100vh;
 }
 
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .quadro {
             margin: auto;
 			max-width: 800px;
