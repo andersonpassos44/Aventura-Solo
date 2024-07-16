@@ -23,7 +23,7 @@
 
 /* Estilo para o menu */
 #menu {
-    display: absolute;
+    display: relative;
     justify-content: center;
     align-items: center;
     color: white;
