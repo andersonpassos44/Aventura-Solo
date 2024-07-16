@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
+header {
+    background-color: #240046;
+    color: #fff;
+    padding: 10px 0;
+}
+
 /* Container para centralizar o conteúdo */
 .container {
     display: flex;
@@ -23,11 +29,11 @@
 
 /* Estilo para o menu */
 #menu {
+    display: absolute;
     display: relative;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.5rem;
     visibility: hidden;
 	font-weight: bold;
 }
@@ -48,6 +54,7 @@ body {
     background-color: #000;
     color: #fff;
     font-family: 'Cinzel', serif;
+	font-size: 20px;
     text-align: center;
     background-image: url('media/background_rpg.jpeg'); /* Adicione o caminho para o seu background */
     background-size: cover;
@@ -167,3 +174,29 @@ nav ul li:hover .submenu {
     font-size: 1rem;
 }
 
+
+
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul.menu {
+        flex-direction: column;
+    }
+    
+    nav ul.menu > li {
+        width: 100%;
+    }
+
+    ul.submenu {
+        position: static;
+    }
+
+    nav ul.menu li.dropdown:hover > ul.submenu {
+        display: none;
+    }
+
+    .dropdown > a:focus + .submenu,
+    .dropdown > a:hover + .submenu {
+        display: block;
+    }
+}
