@@ -109,16 +109,16 @@ audio {
 /* Estilo para o submenu */
 .submenu {
     display: none;
-    position: relative;
+    position: relative bottom;
     background-color: #393;
     padding: 10px;
     list-style: none;
     margin: 0;
     border-radius: 5px;
     z-index: 1000; /* Garante que o submenu apareça sobre outros elementos */
-	top:100%;
-	left:0;
-	max-height: 200px; /* Ajuste conforme necessário */
+    top: 100%;
+    left: 0;
+    max-height: 200px; /* Ajuste conforme necessário */
     overflow-y: auto; /* Adiciona uma barra de rolagem se o conteúdo ultrapassar a altura máxima */
 }
 
