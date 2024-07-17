@@ -20,3 +20,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+const correctSequence = [1, 9, 2, 7];
+let userSequence = [];
+
+function digitClick(digit) {
+    userSequence.push(digit);
+    if (userSequence.length === correctSequence.length) {
+        if (checkSequence()) {
+            window.location.href = "numero6.html"; // Redireciona para a página definida
+        } else {
+            alert("Sequência incorreta! Tente novamente.");
+        }
+        userSequence = []; // Reseta a sequência do usuário
+    }
+}
+
+function checkSequence() {
+    for (let i = 0; i < correctSequence.length; i++) {
+        if (userSequence[i] !== correctSequence[i]) {
+            return false;
+        }
+    }
+    return true;
+}
