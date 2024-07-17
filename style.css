@@ -109,7 +109,7 @@ audio {
 /* Estilo para o submenu */
 .submenu {
     display: none;
-    position: relative bottom;
+    position: absolute;
     background-color: #393;
     padding: 10px;
     list-style: none;
@@ -137,7 +137,7 @@ nav ul li:hover .submenu {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    padding: 0;
+    padding: 35px 0;
     background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
     border-bottom: 2px solid #fff;
     font-size: 1.2rem;
