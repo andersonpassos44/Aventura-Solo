@@ -109,7 +109,7 @@ audio {
 /* Estilo para o submenu */
 .submenu {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #393;
     padding: 10px;
     list-style: none;
